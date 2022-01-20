@@ -10,6 +10,13 @@
 
 // TODO: Write solution here
 
+let myAge = 28
+
+if myAge >= 13 && myAge <= 19 {
+  print("teenager")
+}else {
+  print("not a teenager")
+}
 
 /*:
  ## Challenge 2
@@ -19,4 +26,8 @@
  */
 
 // TODO: Write solution here
+
+let teenagerName = myAge >= 13 && myAge <= 19 ? "heesung" : "not me"
+
+print(teenagerName)
 
