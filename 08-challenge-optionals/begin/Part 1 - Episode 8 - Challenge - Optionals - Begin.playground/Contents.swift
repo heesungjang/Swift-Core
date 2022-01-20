@@ -13,6 +13,11 @@
 // TODO: Write solution here
 let hasAllergies = true
 
+var dogName: String?
+
+dogName = hasAllergies ? nil : "Mango"
+
+
 /*:
  ## Challenge 2
  
@@ -23,6 +28,11 @@ let hasAllergies = true
 
 // TODO: Write solution here
 
+let parseInt = Int("10")
+
+// becuase there is a chance where the passed argument not being number string. e.g) It could be "dog" and not "1" or "2"
+
+
 
 /*:
  ## Challenge 3
@@ -32,6 +42,7 @@ let hasAllergies = true
  What will the value of `newParsedInt be? Why?
  
  */
+let newParsedInt = Int("cat")
 
 // TODO: Write solution here
 
