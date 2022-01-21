@@ -15,7 +15,9 @@ var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
 
 // TODO: Write solution here
 
+let count: Int = players.count
 
+var isCharles: Bool = players.contains("Charles")
 /*:
  ## Challenge 2
  
@@ -27,12 +29,16 @@ var players = ["Alice", "Bob", "Dan", "Eli", "Frank"]
 
 // TODO: Write solution here
 
+players.insert("Charles", at: 2)
 
+players += ["Gloria", "Hermione"]
 /*:
  ## Challenge 3
  
  Create another new constant array named `teamOne` that consists of the last four members of the `players` array; that would be the range of elements from 4...7
  */
+
+let teamOne: Array<String>.SubSequence = players[4...7]
 
 // TODO: Write solution here
 

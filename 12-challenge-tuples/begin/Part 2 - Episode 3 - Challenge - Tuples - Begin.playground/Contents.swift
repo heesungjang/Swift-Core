@@ -39,3 +39,131 @@ varMySpecialDay.date = 2
 let (myDate, _, _, myEvent) = varMySpecialDay
 
 print(date, event)
+
+// types
+
+
+let age: Int = 10
+
+
+let ageRate: Float = 2.5
+
+
+let meInYearsInFloat: Float = Float(age) * ageRate
+let meInYearsInInt: Int = age * Int(ageRate)
+
+
+
+let age1 = 42
+let age2 = 21
+
+let avg1 = (Double(age1) / Double(age2)) / 2
+
+print(avg1)
+
+
+
+
+let coordinate: (Int, Int) = (2, 3)
+
+let namedCoordinate: (Int, Int) = (row: 2, column: 3)
+
+
+
+
+
+let tuple = (day: 15, month: 8, year: 2015)
+let day = tuple.day
+
+var name = "Matt"
+name += " Galloway"
+
+
+let myFavoriteSong: String? = nil
+
+let parsedId = Int("10")
+
+print(parsedId!)
+
+
+print(parsedId!)
+if let parsedId = parsedId {
+  print(parsedId)
+}
+
+let authorName: String? = "heesung"
+
+print(authorName!)
+
+if let authorName = authorName {
+  print(authorName)
+}
+
+
+let authorAge: Int? = 10
+
+
+if let authorName = authorName,
+   let authorAge = authorAge {
+  print(authorAge, authorName)
+}
+
+
+
+func printMyName(name: String?) -> Void {
+  guard let name = name else {
+    print("No name to print. sorry...")
+    return
+  }
+  
+  print("Your name is \(name)")
+}
+
+
+printMyName(name: nil)
+
+
+func calculateNumberOfSides(shape: String) -> Int? {
+  switch shape {
+  case "Triangle":
+    return 3
+  case "Square":
+    return 4
+  case "Rectangle":
+    return 4
+  case "Pentagon":
+    return 5
+  case "Hexagon":
+    return 6
+  default:
+    return nil
+  }
+}
+
+
+func maybePrintSides(shape: String) {
+  let sides = calculateNumberOfSides(shape: shape)
+
+  if let sides = sides {
+    print("A \(shape) has \(sides) sides.")
+  } else {
+    print("I don’t know the number of sides for \(shape).")
+  }
+}
+
+
+func maybePrintSidesGuarded(shape: String) {
+  guard let slides = calculateNumberOfSides(shape: shape) else {
+    print("please give me a proper shape")
+    return
+  }
+  
+  print(slides)
+}
+
+maybePrintSidesGuarded(shape: "heesung")
+
+maybePrintSidesGuarded(shape: "Pentagon")
+
+
+
